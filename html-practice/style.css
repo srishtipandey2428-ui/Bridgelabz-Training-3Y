@@ -1,0 +1,30 @@
+.container{
+    border: qpx solid red;
+    height:600ox;
+    display:grid;
+    gap:10px;
+    grid-template-columns: 100px 200px 300px;
+    grid-template-rows: 150px 150px 150px;
+}
+.box{
+    border: 1px solid black;
+    background-color:red;
+}
+
+
+.box1{
+    background-color: green;
+}
+
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: pink;
+}
+.box5{
+    background-color: orange;
+}
