@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f4f1e8;
+    color: #222;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 25px;
+    border-bottom: 5px solid #555;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 25px;
+}
+
+main > h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #222;
+    padding-bottom: 10px;
+}
+
+/* Newspaper */
+.newspaper {
+    column-count: 3;
+    column-gap: 30px;
+    text-align: justify;
+    line-height: 1.7;
+}
+
+/* Main heading spans all columns */
+.main-heading {
+    column-span: all;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+}
+
+/* Floating Image */
+.newspaper img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+
+    float: left;
+    margin: 0 15px 10px 0;
+}
+
+/* Paragraphs */
+.newspaper p {
+    margin-bottom: 18px;
+}
+
+/* Sub heading */
+.sub-heading {
+    break-inside: avoid;
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+
+    .newspaper {
+        column-count: 2;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .newspaper {
+        column-count: 1;
+    }
+
+    .newspaper img {
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 0 0 15px 0;
+    }
+}
