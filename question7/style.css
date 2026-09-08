@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    min-height: 100vh;
+}
+
+/* Main Container */
+.contact-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+/* Form */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.contact-form h1 {
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    font-size: 2.3rem;
+}
+
+.contact-form > p {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+/* Inputs */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 15px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    font-family: Arial, sans-serif;
+
+    outline: none;
+
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #667eea;
+
+    box-shadow: 0 0 8px rgba(102, 126, 234, 0.3);
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Button */
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #667eea;
+
+    color: white;
+
+    font-size: 1.1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease,
+                transform 0.2s ease;
+}
+
+button:hover {
+    background: #764ba2;
+
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .contact-form h1 {
+        font-size: 1.9rem;
+    }
+}
