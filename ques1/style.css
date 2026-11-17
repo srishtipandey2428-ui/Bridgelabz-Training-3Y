@@ -18,12 +18,16 @@ body {
 /* Header */
 .header {
     display: flex;
+
     justify-content: space-between;
     align-items: center;
 
     padding: 20px 8%;
 
     background-color: #222;
+
+
+    
     color: white;
 }
 
@@ -95,7 +99,7 @@ main {
     height: 300px;
 
     object-fit: cover;
-
+    
     border-radius: 50%;
 
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
